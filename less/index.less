@@ -137,44 +137,65 @@ table {
 
 /* --------------------------- */
 @import "buttons.less";
-
+@import "variables.less";
 
 :root {
     font-size: 62.5%;
-    
+
 }
 
-body{
+body {
     font-family: Nunito;
     font-style : normal;
     font-weight: 600;
     font-size  : 1.8rem;
     line-height: 2.5rem;
     display    : flex;
+    color:@bodycolor;
 }
 
 header {
-    background-color: #BDBDBD;
+    background-color: @headercolor;
     display         : flex;
     flex-direction  : row;
     align-items     : center;
     justify-content : space-between;
-    font-size       : 1.6rem;
     color           : black;
+    max-height: 141px;
 }
+/* 
+.logoidv{
+    max-height: 14.1rem;
+} */
 
 nav {
-    padding: 0px 2rem;
+    padding: 0 1rem;
 }
 
 a {
     text-decoration: none;
-    color          : black;
+    color          : white;
+    padding        : 0.5rem 0.5rem;
 
 }
 
 .signup_in {
-    .button;
+    background-color: #AE71E8;
+    border          : solid #AE71E8;
+    border-radius   : 2rem;
+    padding         : 0.5rem 1rem;
+
+    color      : white;
+    font-family: Nunito;
+    font-style : normal;
+    font-weight: 600;
+    font-size  : 1.8rem;
+    line-height: 2.5rem;
+}
+
+h1{ 
+    font-size : 2.4rem;
+    margin-bottom: 0.9rem;
 }
 
 .section-top {
@@ -209,17 +230,14 @@ a {
 }
 
 .twobuttons {
-    width         : 100%;
-    display       : flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width : 48%;
     margin: 1rem auto;
+  
 }
 
 .onebutton {
-    width: 100%;
-    margin: 1rem auto;
-    
+    width : 100%;
+    margin: 1rem auto;  
 }
 
 .halfsizedbutton {
@@ -227,9 +245,12 @@ a {
     .button;
 }
 
-.fullsizedbutton{
+.fullsizedbutton {
     width: 100%;
     .button;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .section-bottom {

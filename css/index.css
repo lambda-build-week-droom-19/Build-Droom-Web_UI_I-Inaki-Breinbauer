@@ -154,20 +154,25 @@ body {
   display: flex;
 }
 header {
-  background-color: #BDBDBD;
+  background-color: #242424;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.6rem;
   color: black;
+  max-height: 141px;
 }
+/* 
+.logoidv{
+    max-height: 14.1rem;
+} */
 nav {
-  padding: 0px 2rem;
+  padding: 0 1rem;
 }
 a {
   text-decoration: none;
-  color: black;
+  color: white;
+  padding: 0.5rem 0.5rem;
 }
 .signup_in {
   background-color: #AE71E8;
@@ -180,9 +185,10 @@ a {
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 2.5rem;
-  display: flex;
-  align-items: center;
-  text-align: center;
+}
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.9rem;
 }
 .section-top {
   width: 100%;
@@ -219,6 +225,9 @@ a {
 .onebutton {
   width: 100%;
   margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .halfsizedbutton {
   width: 48%;
@@ -248,8 +257,9 @@ a {
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 2.5rem;
-  display: flex;
   align-items: center;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 .section-bottom {
