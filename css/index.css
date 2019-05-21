@@ -152,6 +152,7 @@ body {
   font-size: 1.8rem;
   line-height: 2.5rem;
   display: flex;
+  background-color: #D6D6D6;
 }
 header {
   background-color: #242424;
@@ -220,9 +221,8 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 2rem;
+  padding: 3rem 0;
   font-size: 1.6rem;
-  background-color: #F0F0F0;
 }
 .imgdiv {
   max-width: 100%;
@@ -241,8 +241,8 @@ h1 {
 .div3 {
   width: 20%;
 }
-.section-middle {
-  width: 30%;
+.section-bottom {
+  width: 50%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -290,7 +290,28 @@ h1 {
   flex-direction: column;
   text-align: center;
 }
-.section-bottom {
+.section-middle {
   display: flex;
   flex-direction: column;
+  width: 90%;
+  margin: 3rem auto;
+  align-items: center;
+}
+.divbottom {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem auto;
+  align-items: center;
+}
+.divicon {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  text-align: center;
+}
+#h1advantages {
+  font-size: 3.2rem;
 }

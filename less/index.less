@@ -145,12 +145,13 @@ table {
 }
 
 body {
-    font-family: Nunito;
-    font-style : normal;
-    font-weight: 600;
-    font-size  : 1.8rem;
-    line-height: 2.5rem;
-    display    : flex;
+    font-family     : Nunito;
+    font-style      : normal;
+    font-weight     : 600;
+    font-size       : 1.8rem;
+    line-height     : 2.5rem;
+    display         : flex;
+    background-color: @bodycolor;
 }
 
 header {
@@ -228,13 +229,12 @@ h1 {
 }
 
 .section-top {
-    width           : 100%;
-    display         : flex;
-    flex-direction  : row;
-    justify-content : space-evenly;
-    padding         : 2rem;
-    font-size       : 1.6rem;
-    background-color: @bodycolor;
+    width          : 100%;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-evenly;
+    padding        : 3rem 0;
+    font-size      : 1.6rem;
 }
 
 .imgdiv {
@@ -259,12 +259,11 @@ h1 {
     width: 20%;
 }
 
-.section-middle {
-    width         : 30%;
+.section-bottom {
+    width         : 50%;
     margin        : 0 auto;
     display       : flex;
     flex-direction: column;
-
 }
 
 .twobuttons {
@@ -294,8 +293,33 @@ h1 {
     text-align    : center;
 }
 
-.section-bottom {
+
+.section-middle {
     display       : flex;
     flex-direction: column;
+    width         : 90%;
+    margin        : 3rem auto;
+    align-items   : center;
+}
 
+.divbottom {
+    display       : flex;
+    flex-direction: row;
+    margin        : 3rem auto;
+    align-items   : center;
+}
+
+.divicon {
+    width         : 25vw;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#h1advantages {
+    font-size: 3.2rem;
 }
