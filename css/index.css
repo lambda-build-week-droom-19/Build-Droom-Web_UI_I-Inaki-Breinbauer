@@ -127,14 +127,31 @@ table {
   border-spacing: 0;
 }
 /* --------------------------- */
-button {
-  background-color: #E8CA71;
-  border: solid #E8CA71;
+.button {
+  background-color: #AE71E8;
+  border: solid #AE71E8;
   border-radius: 2rem;
   padding: 0.5rem 1rem;
+  color: white;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 :root {
   font-size: 62.5%;
+}
+body {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  display: flex;
 }
 header {
   background-color: #BDBDBD;
@@ -151,13 +168,21 @@ nav {
 a {
   text-decoration: none;
   color: black;
-  padding: 0.5rem 1rem;
 }
 .signup_in {
-  background-color: #E8CA71;
-  border: solid #E8CA71;
+  background-color: #AE71E8;
+  border: solid #AE71E8;
   border-radius: 2rem;
-  /* padding         : 0.5rem 1rem */
+  padding: 0.5rem 1rem;
+  color: white;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 .section-top {
   width: 100%;
@@ -197,9 +222,35 @@ a {
 }
 .halfsizedbutton {
   width: 48%;
+  background-color: #AE71E8;
+  border: solid #AE71E8;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 .fullsizedbutton {
   width: 100%;
+  background-color: #AE71E8;
+  border: solid #AE71E8;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 .section-bottom {
   display: flex;
