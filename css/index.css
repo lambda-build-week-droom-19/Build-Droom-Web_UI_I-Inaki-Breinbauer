@@ -158,6 +158,10 @@ body {
   display: flex;
   background-color: #D6D6D6;
 }
+.container {
+  max-width: 100%;
+  width: 100%;
+}
 header {
   background-color: #242424;
   display: flex;
@@ -167,10 +171,9 @@ header {
   color: black;
   max-height: 141px;
 }
-/* 
-.logoidv{
-    max-height: 14.1rem;
-} */
+img {
+  display: block;
+}
 nav {
   padding: 0 1rem;
 }
@@ -178,6 +181,9 @@ a {
   text-decoration: none;
   color: white;
   padding: 0.5rem 0.5rem;
+}
+a:hover {
+  color: #AE71E8;
 }
 .signup_in {
   background-color: #AE71E8;
@@ -193,7 +199,7 @@ a {
 }
 .signup_in:hover {
   background-color: white;
-  color: #242424;
+  color: #AE71E8;
   border-color: white;
 }
 h1 {
@@ -202,14 +208,11 @@ h1 {
 }
 .section-landing {
   max-width: 100%;
-  max-height: 100%;
-  height: 95%;
+  height: 750px;
   background-image: url("astronaut-4106766_1920.png");
-  background-size: 100%;
+  background-size: 100% auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .landingh1 {
   font-size: 1.8em;
@@ -230,31 +233,46 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
   padding: 3rem 0;
   font-size: 1.6rem;
-}
-.imgdiv {
-  max-width: 100%;
   margin: 0 auto;
 }
-.imgdiv img {
-  max-width: 100%;
-  margin: 0 auto;
+@media (max-width: 750px) {
+  .section-top {
+    flex-direction: column;
+  }
 }
 .div1 {
   width: 20%;
 }
+@media (max-width: 750px) {
+  .div1 {
+    width: 100%;
+  }
+}
 .div2 {
   width: 20%;
 }
+@media (max-width: 750px) {
+  .div2 {
+    width: 100%;
+  }
+}
 .div3 {
   width: 20%;
+}
+@media (max-width: 750px) {
+  .div3 {
+    width: 100%;
+  }
 }
 .section-bottom {
   width: 50%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: space-between;
 }
 .twobuttons {
   display: flex;
@@ -311,7 +329,7 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin: 3rem auto;
+  margin: 3rem 2rem;
   align-items: center;
 }
 .divbottom {
@@ -320,11 +338,23 @@ h1 {
   margin: 3rem auto;
   align-items: center;
 }
+@media (max-width: 650px) {
+  .divbottom {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
 .divicon {
   width: 25vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 650px) {
+  .divicon {
+    margin: 1rem 0;
+  }
 }
 h2 {
   text-align: center;
@@ -332,20 +362,9 @@ h2 {
 #h1advantages {
   font-size: 3.2rem;
 }
-ul.share-buttons {
-  list-style: none;
-  padding: 0;
-}
-ul.share-buttons li {
-  display: inline;
-}
-ul.share-buttons .sr-only {
-  position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0 3.5rem 0;
 }
