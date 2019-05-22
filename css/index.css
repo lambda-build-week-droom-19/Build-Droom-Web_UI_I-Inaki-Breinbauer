@@ -299,7 +299,8 @@ a:hover {
 }
 @media (max-width: 750px) {
   a {
-    margin: 1rem;
+    padding: 1rem;
+    margin: 0;
   }
 }
 .menu {
@@ -340,35 +341,44 @@ a:hover {
   color: #AE71E8;
   border-color: white;
 }
+@media (max-width: 750px) {
+  .signup_in {
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+  }
+}
 h1 {
   font-size: 2.4rem;
   margin-bottom: 0.9rem;
 }
 .section-landing {
-  max-width: 100%;
-  height: 750px;
-  width: 100 vw;
+  width: 101%;
+  height: 50vw;
   margin-top: 8vh;
   background-image: url("astronaut-4106766_1920.png");
-  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 400px) {
+  .section-landing {
+    margin-top: 12vh;
+  }
 }
 .landingh1 {
   font-size: 1.8em;
   color: white;
+  text-decoration: underline;
   max-width: 80%;
   text-align: center;
 }
 .landingdiv {
-  height: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.scalingdiv {
-  height: 50%;
 }
 .section-top {
   width: 100%;
