@@ -299,7 +299,8 @@ a:hover {
 }
 @media (max-width: 750px) {
   a {
-    margin: 1rem;
+    padding: 1rem;
+    margin: 0;
   }
 }
 .menu {
@@ -339,6 +340,12 @@ a:hover {
   background-color: white;
   color: #AE71E8;
   border-color: white;
+}
+@media (max-width: 750px) {
+  .signup_in {
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+  }
 }
 h1 {
   font-size: 2.4rem;
