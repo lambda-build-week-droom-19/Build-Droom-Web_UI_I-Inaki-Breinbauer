@@ -217,6 +217,8 @@ h1 {
 .landingh1 {
   font-size: 1.8em;
   color: white;
+  max-width: 80%;
+  text-align: center;
 }
 .landingdiv {
   height: 50%;
@@ -233,14 +235,15 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
   padding: 3rem 0;
   font-size: 1.6rem;
   margin: 0 auto;
 }
 @media (max-width: 750px) {
   .section-top {
+    width: 90%;
     flex-direction: column;
+    padding: 3rem 0rem;
   }
 }
 .div1 {
@@ -249,6 +252,14 @@ h1 {
 @media (max-width: 750px) {
   .div1 {
     width: 100%;
+    order: 2;
+    padding-bottom: 3rem;
+  }
+  .div1 h1 {
+    text-align: center;
+  }
+  .div1 p {
+    text-align: center;
   }
 }
 .div2 {
@@ -257,6 +268,14 @@ h1 {
 @media (max-width: 750px) {
   .div2 {
     width: 100%;
+    order: 1;
+    padding-bottom: 3rem;
+  }
+  .div2 h1 {
+    text-align: center;
+  }
+  .div2 p {
+    text-align: center;
   }
 }
 .div3 {
@@ -265,6 +284,13 @@ h1 {
 @media (max-width: 750px) {
   .div3 {
     width: 100%;
+    order: 3;
+  }
+  .div3 h1 {
+    text-align: center;
+  }
+  .div3 p {
+    text-align: center;
   }
 }
 .section-bottom {
