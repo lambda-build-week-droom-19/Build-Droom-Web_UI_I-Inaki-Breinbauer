@@ -145,13 +145,18 @@ table {
 }
 
 body {
-    font-family: Nunito;
-    font-style : normal;
-    font-weight: 600;
-    font-size  : 1.8rem;
-    line-height: 2.5rem;
-    display    : flex;
-    color:@bodycolor;
+    font-family     : Nunito;
+    font-style      : normal;
+    font-weight     : 600;
+    font-size       : 1.8rem;
+    line-height     : 2.5rem;
+    display         : flex;
+    background-color: @bodycolor;
+}
+
+.container {
+    max-width: 100%;
+    width    : 100%;
 }
 
 header {
@@ -161,12 +166,13 @@ header {
     align-items     : center;
     justify-content : space-between;
     color           : black;
-    max-height: 141px;
+    max-height      : 141px;
 }
-/* 
-.logoidv{
-    max-height: 14.1rem;
-} */
+
+img {
+    display: block;
+}
+
 
 nav {
     padding: 0 1rem;
@@ -176,6 +182,10 @@ a {
     text-decoration: none;
     color          : white;
     padding        : 0.5rem 0.5rem;
+
+    &:hover {
+        color: @primarycolor;
+    }
 
 }
 
@@ -191,11 +201,45 @@ a {
     font-weight: 600;
     font-size  : 1.8rem;
     line-height: 2.5rem;
+
+    &:hover {
+        background-color: white;
+        color           : @primarycolor;
+        border-color    : white;
+    }
 }
 
-h1{ 
-    font-size : 2.4rem;
+h1 {
+    font-size    : 2.4rem;
     margin-bottom: 0.9rem;
+}
+
+.section-landing {
+    max-width       : 100%;
+    height          : 750px;
+    background-image: url("astronaut-4106766_1920.png");
+    background-size : 100% auto;
+    display         : flex;
+    flex-direction  : column;
+}
+
+.landingh1 {
+    font-size : 1.8em;
+    color     : white;
+    max-width : 80%;
+    text-align: center;
+}
+
+.landingdiv {
+    height         : 50%;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+}
+
+.scalingdiv {
+    height: 50%;
 }
 
 .section-top {
@@ -203,58 +247,151 @@ h1{
     display        : flex;
     flex-direction : row;
     justify-content: space-evenly;
-    margin         : 2rem auto;
+    padding        : 3rem 0;
     font-size      : 1.6rem;
+    margin         : 0 auto;
 
+    @media (max-width : 750px) {
+        width         : 90%;
+        flex-direction: column;
+        padding       : 3rem 0rem;
+    }
 }
 
 .div1 {
     width: 20%;
+
+    @media (max-width : 750px) {
+        width         : 100%;
+        order         : 2;
+        padding-bottom: 3rem;
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
 }
 
 .div2 {
     width: 20%;
+
+    @media (max-width : 750px) {
+        width         : 100%;
+        order         : 1;
+        padding-bottom: 3rem;
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
 }
 
 .div3 {
     width: 20%;
+
+    @media (max-width : 750px) {
+        width: 100%;
+        order: 3;
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
 }
 
-.section-middle {
-    display        : flex;
-    flex-direction : column;
-    justify-content: center;
-    align-content  : center;
-    width          : 30%;
-    margin         : 0 auto;
+
+.section-bottom {
+    width         : 50%;
+    margin        : 0 auto;
+    display       : flex;
+    flex-direction: column;
+    align-items   : space-between;
+
 }
 
 .twobuttons {
-    width : 48%;
-    margin: 1rem auto;
-  
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
 }
 
 .onebutton {
     width : 100%;
-    margin: 1rem auto;  
+    margin: 1rem auto;
 }
 
 .halfsizedbutton {
-    width: 48%;
+    width: 49.5%;
     .button;
+    display       : flex;
+    flex-direction: column;
+    text-align    : center;
 }
 
 .fullsizedbutton {
     width: 100%;
     .button;
-    display: flex;
+    display       : flex;
     flex-direction: column;
+    text-align    : center;
+}
+
+
+.section-middle {
+    display       : flex;
+    flex-direction: column;
+    width         : 90%;
+    margin        : 3rem 2rem;
+    align-items   : center;
+}
+
+.divbottom {
+    display       : flex;
+    flex-direction: row;
+    margin        : 3rem auto;
+    align-items   : center;
+
+    @media (max-width : 650px) {
+        flex-direction : column;
+        justify-content: space-between;
+        margin         : 0 auto;
+    }
+}
+
+.divicon {
+    width         : 25vw;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+
+    @media (max-width : 650px) {
+        margin: 1rem 0;
+    }
+}
+
+h2 {
     text-align: center;
 }
 
-.section-bottom {
+#h1advantages {
+    font-size: 3.2rem;
+}
+
+footer {
     display       : flex;
     flex-direction: column;
-
+    align-items   : center;
+    padding       : 3rem 0 3.5rem 0;
 }
