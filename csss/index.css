@@ -294,11 +294,31 @@ h1 {
   }
 }
 .section-bottom {
-  width: 50%;
+  width: 55%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: space-between;
+}
+@media (max-width: 650px) {
+  .section-bottom {
+    width: 60%;
+  }
+}
+@media (max-width: 585px) {
+  .section-bottom {
+    width: 40%;
+  }
+}
+@media (max-width: 475px) {
+  .section-bottom {
+    width: 50%;
+  }
+}
+@media (max-width: 400px) {
+  .section-bottom {
+    width: 65%;
+  }
 }
 .twobuttons {
   display: flex;
@@ -355,7 +375,7 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin: 3rem 2rem;
+  margin: 3rem auto;
   align-items: center;
 }
 .divbottom {
