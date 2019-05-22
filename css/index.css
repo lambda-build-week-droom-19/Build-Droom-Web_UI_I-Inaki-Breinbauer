@@ -169,27 +169,89 @@ header {
   align-items: center;
   justify-content: space-between;
   color: black;
-  max-height: 141px;
+  border-bottom: 0.25px solid #707070;
+  position: fixed;
+  width: 100vw;
+}
+@media (max-width: 750px) {
+  header {
+    border: none;
+  }
 }
 img {
   display: block;
 }
+.logodiv {
+  width: 25vw;
+  max-width: 100px;
+}
+.logodiv .logo {
+  width: 25vw;
+  max-width: 100px;
+}
 nav {
-  padding: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media (max-width: 750px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 65px;
+    right: 0;
+    max-width: 100vw;
+    width: 200px;
+    height: auto;
+    background-color: #242424;
+    border-top: none;
+    border-bottom: none;
+    z-index: 2;
+  }
+}
+.open {
+  display: flex;
 }
 a {
   text-decoration: none;
   color: white;
   padding: 0.5rem 0.5rem;
+  text-align: center;
 }
 a:hover {
   color: #AE71E8;
+}
+@media (max-width: 750px) {
+  a {
+    margin: 1rem;
+  }
+}
+.menu {
+  padding: 0.5rem 0rem;
+  display: block;
+  align-self: center;
+}
+.menu img {
+  display: none;
+  padding: 0.5rem 2vw;
+}
+@media (max-width: 750px) {
+  .menu img {
+    display: block;
+  }
+}
+@media (max-width: 750px) {
+  .menu {
+    display: inline;
+  }
 }
 .signup_in {
   background-color: #AE71E8;
   border: solid #AE71E8;
   border-radius: 2rem;
   padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
   color: white;
   font-family: Nunito;
   font-style: normal;
@@ -209,6 +271,7 @@ h1 {
 .section-landing {
   max-width: 100%;
   height: 750px;
+  top: 100px;
   background-image: url("astronaut-4106766_1920.png");
   background-size: 100% auto;
   display: flex;
