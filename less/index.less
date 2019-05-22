@@ -230,7 +230,7 @@ a {
 
     @media (max-width : 750px) {
         padding: 1rem;
-        margin: 0;
+        margin : 0;
     }
 
 }
@@ -278,7 +278,7 @@ a {
 
     @media (max-width: 750px) {
         margin-bottom: 1.5rem;
-        margin-right: 0;
+        margin-right : 0;
     }
 }
 
@@ -288,14 +288,18 @@ h1 {
 }
 
 .section-landing {
-    max-width       : 100%;
-    height          : 750px;
-    width           : 100 vw;
-    margin-top      : 8vh;
-    background-image: url("astronaut-4106766_1920.png");
-    background-size : 100% auto;
-    display         : flex;
-    flex-direction  : column;
+    width            : 101%;
+    height           : 50vw;
+    margin-top       : 8vh;
+    background-image : url("astronaut-4106766_1920.png");
+    background-repeat: no-repeat;
+    background-size  : 100%;
+    display          : flex;
+    flex-direction   : column;
+
+    @media (max-width: 400px){
+        margin-top       : 12vh;
+    }
 }
 
 .landingh1 {
@@ -306,15 +310,11 @@ h1 {
 }
 
 .landingdiv {
-    height         : 50%;
+    height         : 100%;
     display        : flex;
     flex-direction : column;
     justify-content: center;
     align-items    : center;
-}
-
-.scalingdiv {
-    height: 50%;
 }
 
 .section-top {
