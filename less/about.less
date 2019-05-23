@@ -6,11 +6,14 @@
     padding        : 3rem 0;
     font-size      : 1.6rem;
     margin         : 10vh auto 0 auto;
+    
 
     @media (max-width : 750px) {
         width         : 90%;
+        padding       : 3rem 0rem 1rem 0rem;
         flex-direction: column;
-        padding       : 3rem 0rem;
+        margin         : 10vh auto 0 auto;
+        align-items: center;
     }
 
     @media (max-width : 380px) {
@@ -19,11 +22,13 @@
 
     .div1 {
         width: 20%;
-
+        .border; 
+        padding: 1rem;
         @media (max-width : 750px) {
             width         : 100%;
             order         : 2;
-            padding-bottom: 3rem;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
 
             h1 {
                 text-align: center;
@@ -41,7 +46,7 @@
     display       : flex;
     flex-direction: column;
     align-items   : center;
-    margin        : 10vh auto 0 auto;
+    margin        : 0vh auto 0 auto;
 
     @media (max-width : 750px) {
         width         : 90%;
@@ -57,10 +62,13 @@
         align-items    : center;
 
         .memberdiv {
-            padding: 2rem;
-            border : @headercolor 0.1rem solid;
+            padding: 1rem;
+            .border;
             margin : 2rem;
-
+        
+        @media (max-width: 750px){
+            width:60%;
+        }
 
             .team-img {
                 margin       : 0 auto;
@@ -75,7 +83,24 @@
                     max-height   : 20vw;
                 }
             }
+            
+            p{
+                margin-bottom: 1rem;
+            }
         }
     }
 
+}
+
+.linkedIn {
+    background-color :#0077B5;
+    color: black;
+    border-radius: 1rem;
+    margin: 1rem;
+    text-decoration: none;
+    padding: 0.5rem;
+
+    span{
+        color:white;
+    }
 }
