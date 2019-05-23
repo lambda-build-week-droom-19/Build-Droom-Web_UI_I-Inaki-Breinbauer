@@ -250,6 +250,17 @@ table {
 }
 .linkedIn span {
   color: white;
+  padding-left: 0.25rem;
+}
+.testimg {
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+}
+.testimg img {
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
 }
 :root {
   font-size: 62.5%;
