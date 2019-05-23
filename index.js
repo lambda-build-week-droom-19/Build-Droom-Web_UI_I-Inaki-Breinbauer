@@ -17,12 +17,8 @@ menu.addEventListener("mouseout", toggleMenu.bind(this));
 
 const imgarr = document.querySelectorAll(".imgmockup");
 
-console.log(imgarr);
-
 let counter = 0;
 const waitTime = 3000;
-
-console.log(counter);
 
 const change = () => {
 
@@ -38,10 +34,10 @@ const change = () => {
     /* imgarr.forEach((element) => {
         element.classList.remove("show");
     }); */
-    
+
     imgarr[counter].classList.add("show");
 
     setTimeout(change, waitTime);
 }
 
-setTimeout(change, waitTime);
+document.querySelector(".show").addEventListener("onload", setTimeout.call(this, change, 3000));
