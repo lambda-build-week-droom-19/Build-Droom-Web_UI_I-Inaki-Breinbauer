@@ -146,6 +146,10 @@ table {
   background-color: white;
   color: #AE71E8;
 }
+.border {
+  border: 0.1rem solid black;
+  border-radius: 2rem;
+}
 .section-top-about {
   width: 100%;
   display: flex;
@@ -158,8 +162,10 @@ table {
 @media (max-width: 750px) {
   .section-top-about {
     width: 90%;
+    padding: 3rem 0rem 1rem 0rem;
     flex-direction: column;
-    padding: 3rem 0rem;
+    margin: 10vh auto 0 auto;
+    align-items: center;
   }
 }
 @media (max-width: 380px) {
@@ -169,12 +175,16 @@ table {
 }
 .section-top-about .div1 {
   width: 20%;
+  border: 0.1rem solid black;
+  border-radius: 2rem;
+  padding: 1rem;
 }
 @media (max-width: 750px) {
   .section-top-about .div1 {
     width: 100%;
     order: 2;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .section-top-about .div1 h1 {
     text-align: center;
@@ -188,7 +198,7 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10vh auto 0 auto;
+  margin: 0vh auto 0 auto;
 }
 @media (max-width: 750px) {
   .team-section {
@@ -205,9 +215,15 @@ table {
   align-items: center;
 }
 .team-section .teamdiv .memberdiv {
-  padding: 2rem;
-  border: #242424 0.1rem solid;
+  padding: 1rem;
+  border: 0.1rem solid black;
+  border-radius: 2rem;
   margin: 2rem;
+}
+@media (max-width: 750px) {
+  .team-section .teamdiv .memberdiv {
+    width: 60%;
+  }
 }
 .team-section .teamdiv .memberdiv .team-img {
   margin: 0 auto;
@@ -220,6 +236,20 @@ table {
   border-radius: 50%;
   max-width: 20vw;
   max-height: 20vw;
+}
+.team-section .teamdiv .memberdiv p {
+  margin-bottom: 1rem;
+}
+.linkedIn {
+  background-color: #0077B5;
+  color: black;
+  border-radius: 1rem;
+  margin: 1rem;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+.linkedIn span {
+  color: white;
 }
 :root {
   font-size: 62.5%;
@@ -288,17 +318,17 @@ nav {
 .open {
   display: flex;
 }
-a {
+.navtag {
   text-decoration: none;
   color: white;
   padding: 0.5rem 0.5rem;
   text-align: center;
 }
-a:hover {
+.navtag:hover {
   color: #AE71E8;
 }
 @media (max-width: 750px) {
-  a {
+  .navtag {
     padding: 1rem;
     margin: 0;
   }
@@ -367,11 +397,16 @@ h1 {
   }
 }
 .landingh1 {
+  font-family: Asap;
+  font-style: normal;
+  font-weight: normal;
   font-size: 1.8em;
-  color: white;
-  text-decoration: underline;
+  color: #E1CAF6;
   max-width: 80%;
   text-align: center;
+}
+.landingh1 span {
+  color: yellow;
 }
 .landingdiv {
   height: 100%;
@@ -382,6 +417,7 @@ h1 {
 }
 .section-top {
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -389,21 +425,27 @@ h1 {
   font-size: 1.6rem;
   margin: 0 auto;
 }
+.section-top div {
+  margin: 1rem;
+}
 @media (max-width: 750px) {
   .section-top {
     width: 90%;
     flex-direction: column;
+    align-items: center;
     padding: 3rem 0rem;
   }
 }
 .section-top .div1 {
   width: 20%;
+  border: 0.1rem solid black;
+  border-radius: 2rem;
+  padding: 1rem;
 }
 @media (max-width: 750px) {
   .section-top .div1 {
     width: 100%;
     order: 2;
-    padding-bottom: 3rem;
   }
   .section-top .div1 h1 {
     text-align: center;
@@ -413,13 +455,24 @@ h1 {
   }
 }
 .section-top .div2 {
-  width: 20%;
+  width: 40%;
+}
+.section-top .div2 div {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+.section-top .div2 div img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 0.1rem solid black;
+  border-radius: 2rem;
 }
 @media (max-width: 750px) {
   .section-top .div2 {
     width: 100%;
     order: 1;
-    padding-bottom: 3rem;
   }
   .section-top .div2 h1 {
     text-align: center;
@@ -430,6 +483,9 @@ h1 {
 }
 .section-top .div3 {
   width: 20%;
+  padding: 1rem;
+  border: 0.1rem solid black;
+  border-radius: 2rem;
 }
 @media (max-width: 750px) {
   .section-top .div3 {
@@ -473,14 +529,17 @@ h1 {
 .twobuttons {
   display: flex;
   flex-direction: row;
+  margin-bottom: 1rem;
   justify-content: space-between;
 }
 .onebutton {
-  width: 100%;
-  margin: 1rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-between;
 }
 .halfsizedbutton {
-  width: 49.5%;
+  width: 44%;
   background-color: #AE71E8;
   border: solid #AE71E8;
   border-radius: 2rem;
@@ -492,6 +551,7 @@ h1 {
   font-size: 1.8rem;
   line-height: 2.5rem;
   align-items: center;
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -513,6 +573,7 @@ h1 {
   font-size: 1.8rem;
   line-height: 2.5rem;
   align-items: center;
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   text-align: center;
