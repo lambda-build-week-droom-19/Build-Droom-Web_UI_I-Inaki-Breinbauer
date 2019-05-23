@@ -263,9 +263,10 @@ table {
 }
 :root {
   font-size: 62.5%;
+  font-family: Asap;
 }
 body {
-  font-family: Nunito;
+  font-family: Asap;
   font-style: normal;
   font-weight: 600;
   font-size: 1.8rem;
@@ -291,9 +292,6 @@ header {
   position: fixed;
   width: 100vw;
 }
-/* img {
-    display: block;
-} */
 .logodiv {
   width: 25vw;
   max-width: 100px;
@@ -370,7 +368,7 @@ nav {
   padding: 0.5rem 1rem;
   margin-right: 0.5rem;
   color: white;
-  font-family: Nunito;
+  font-family: Asap;
   font-style: normal;
   font-weight: 600;
   font-size: 1.8rem;
