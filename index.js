@@ -39,5 +39,5 @@ const change = () => {
 
     setTimeout(change, waitTime);
 }
-console.log(document.querySelector(".show"));
+
 document.querySelector(".show").addEventListener("onload", setTimeout.call(this, change, 3000));
