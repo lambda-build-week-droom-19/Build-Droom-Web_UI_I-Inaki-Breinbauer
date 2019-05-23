@@ -157,14 +157,13 @@ table {
   justify-content: space-evenly;
   padding: 3rem 0;
   font-size: 1.6rem;
-  margin: 10vh auto 0 auto;
+  margin: 12vh auto 0 auto;
 }
 @media (max-width: 750px) {
   .section-top-about {
     width: 90%;
     padding: 3rem 0rem 1rem 0rem;
     flex-direction: column;
-    margin: 10vh auto 0 auto;
     align-items: center;
   }
 }
@@ -250,6 +249,17 @@ table {
 }
 .linkedIn span {
   color: white;
+  padding-left: 0.25rem;
+}
+.testimg {
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+}
+.testimg img {
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
 }
 :root {
   font-size: 62.5%;
