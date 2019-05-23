@@ -263,6 +263,7 @@ table {
 }
 :root {
   font-size: 62.5%;
+  font-family: Nunito;
 }
 body {
   font-family: Nunito;
@@ -291,9 +292,6 @@ header {
   position: fixed;
   width: 100vw;
 }
-/* img {
-    display: block;
-} */
 .logodiv {
   width: 25vw;
   max-width: 100px;
