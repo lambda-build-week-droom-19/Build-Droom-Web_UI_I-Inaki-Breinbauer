@@ -281,9 +281,9 @@ header {
   position: fixed;
   width: 100vw;
 }
-img {
-  display: block;
-}
+/* img {
+    display: block;
+} */
 .logodiv {
   width: 25vw;
   max-width: 100px;
@@ -462,13 +462,6 @@ h1 {
   height: auto;
   margin: 0 auto;
 }
-.section-top .div2 div img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  border: 0.1rem solid black;
-  border-radius: 2rem;
-}
 @media (max-width: 750px) {
   .section-top .div2 {
     width: 100%;
@@ -498,6 +491,16 @@ h1 {
   .section-top .div3 p {
     text-align: center;
   }
+}
+.imgmockup {
+  display: none;
+}
+.show {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 0.1rem solid black;
+  border-radius: 2rem;
 }
 .section-bottom {
   width: 55%;

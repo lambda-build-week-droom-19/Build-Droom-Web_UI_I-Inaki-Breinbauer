@@ -175,9 +175,9 @@ header {
     width              : 100vw;
 }
 
-img {
+/* img {
     display: block;
-}
+} */
 
 .logodiv {
     width    : 25vw;
@@ -371,13 +371,6 @@ h1 {
             width : auto;
             height: auto;
             margin: 0 auto;
-            
-            img {
-                display  : block;
-                margin   : 0 auto;
-                max-width: 100%;
-                .border;
-            }
         }
 
         @media (max-width : 750px) {
@@ -412,8 +405,19 @@ h1 {
             }
         }
     }
-
 }
+
+.imgmockup {
+    display  : none;
+}
+
+.show {
+    display  : block;
+    margin   : 0 auto;
+    max-width: 100%;
+    .border;
+}
+
 
 .section-bottom {
     width         : 55%;
